@@ -9,6 +9,7 @@ router
 .get('/pessoas/:id', PessoaController.buscarUmaPessoa)
 .post('/pessoas', PessoaController.criarPessoa)
 .post('/pessoas/:id/restaura', PessoaController.restaurarPessoa)
+.post('/pessoas/:estudanteId/cancela', PessoaController.cancelarPessoa)
 .put('/pessoas/:id', PessoaController.atualizarPessoa)
 .delete('/pessoas/:id', PessoaController.deletarPessoa)
 
